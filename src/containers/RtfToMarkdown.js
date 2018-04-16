@@ -23,6 +23,18 @@ export default class RtfToMarkdown extends React.Component {
     this.setState({ text });
   };
   render() {
+    const modules = {
+      toolbar: [
+        [{ 'header': [1, 2, 3, false] }],
+        ['bold', 'italic', 'blockquote'],
+        [
+          { 'list': 'ordered' }, 
+          { 'list': 'bullet' }
+        ],
+        ['link'],
+        ['clean']
+      ],
+    };
     return (
       <Row className="animated fadeIn">
         <Col xs="12" sm="6">
@@ -30,6 +42,7 @@ export default class RtfToMarkdown extends React.Component {
             value={this.state.text}
             onChange={this.handleChange}
             placeholder="Please type or paste your listing here"
+            modules={modules}
           />
         </Col>
         <Col xs="12" sm="6">
