@@ -10,7 +10,7 @@ import {
   Row 
 } from 'reactstrap';
 
-export default class QuillPlayground extends React.Component {
+export default class RtfToMarkdown extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -19,6 +19,7 @@ export default class QuillPlayground extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(value) {
+    const text = value;
     this.setState({ text });
   };
   render() {
