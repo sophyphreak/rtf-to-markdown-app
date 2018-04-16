@@ -18,8 +18,7 @@ export default class RtfToMarkdown extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(value) {
-    const text = value;
+  handleChange(text) {
     this.setState({ text });
   };
   render() {
