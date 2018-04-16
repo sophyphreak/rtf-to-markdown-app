@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import RtfToMarkdown from './containers/RtfToMarkdown';
+import RtfToMarkdown from './components/RtfToMarkdown';
 
 // import ReactQuill styles
 import 'react-quill/dist/quill.snow.css';
