@@ -10,6 +10,8 @@ import {
   Row 
 } from 'reactstrap';
 
+import modules from './modules/modules';
+
 export default class RtfToMarkdown extends React.Component {
   constructor(props) {
     super(props)
@@ -22,18 +24,6 @@ export default class RtfToMarkdown extends React.Component {
     this.setState({ text });
   };
   render() {
-    const modules = {
-      toolbar: [
-        [{ 'header': [1, 2, 3, false] }],
-        ['bold', 'italic', 'blockquote'],
-        [
-          { 'list': 'ordered' }, 
-          { 'list': 'bullet' }
-        ],
-        ['link'],
-        ['clean']
-      ],
-    };
     return (
       <Row className="animated fadeIn">
         <Col xs="12" sm="6">
